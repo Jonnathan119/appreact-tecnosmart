@@ -1,7 +1,7 @@
 // src/components/ReturnForm.js
 import React, { useState } from 'react';
 import { useReturns } from '../context/ReturnsContext';
-import './ReturnForm.css'; // Importar CSS
+import './ReturnForm.css'; // Importación CSS
 
 const ReturnForm = () => {
   const { addReturn } = useReturns();
@@ -28,7 +28,7 @@ const ReturnForm = () => {
       phoneNumber,
       imei,
     });
-    // Limpiar los campos del formulario
+    // código que limpia los campos del formulario
     setProduct('');
     setReason('');
     setRefund(0);

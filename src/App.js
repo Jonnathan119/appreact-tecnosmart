@@ -2,7 +2,7 @@
 import React from 'react';
 import { ReturnsProvider } from './context/ReturnsContext';
 import ReturnsDashboard from './components/ReturnsDashboard';
-import './App.css'; // Importar el archivo CSS global
+import './App.css'; // Importación del archivo CSS global
 
 const App = () => {
   return (

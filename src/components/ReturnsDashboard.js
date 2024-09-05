@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useReturns } from '../context/ReturnsContext';
 import ReturnForm from './ReturnForm';
 import ReturnItem from './ReturnItem';
-import './ReturnsDashboard.css'; // Importar CSS
+import './ReturnsDashboard.css'; // Importación CSS
 
 const ReturnsDashboard = () => {
   const { returns } = useReturns();

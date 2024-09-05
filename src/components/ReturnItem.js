@@ -1,7 +1,7 @@
 // src/components/ReturnItem.js
 import React from 'react';
 import { useReturns } from '../context/ReturnsContext';
-import './ReturnItem.css'; // Importar CSS
+import './ReturnItem.css'; // Importación CSS
 
 const ReturnItem = ({ returnData }) => {
   const { updateReturnStatus } = useReturns();
