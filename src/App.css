@@ -1,0 +1,90 @@
+/* src/App.css */
+
+/* Estilo global para toda la página */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  display: flex;  /* Flexbox para centrar contenido */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  min-height: 100vh; /* La página ocupa al menos el 100% de la altura de la ventana */
+  overflow: hidden; /* Evitar scroll si hay un pequeño desbordamiento */
+  overflow-y: auto;
+}
+
+/* Contenedor para manejar la imagen de fondo y el overlay */
+.background-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Colocar el fondo detrás del contenido */
+  overflow: hidden; /* Evitar scroll si hay un pequeño desbordamiento */
+}
+
+/* Imagen de fondo difuminada */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('C:\Users\jonna\appreact-tecnosmart\src\images\Tecnosmart Samaná.jpg'); /* URL de la imagen de fondo */
+  background-size: cover;  /* Ajusta la imagen para cubrir toda la pantalla */
+  background-position: center; /* Centra la imagen de fondo */
+  filter: blur(0.5px); /* Difumina la imagen de fondo */
+  z-index: 1; /* Fondo de imagen detrás del overlay */
+}
+
+/* Overlay de color verde-azul con transparencia */
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 128, 128, 0.6); /* Fondo verde-azul con transparencia */
+  z-index: 2; /* Overlay sobre la imagen difuminada */
+}
+
+/* Estilo del título de la aplicación fijado en la parte superior */
+.app-title {
+  position: fixed; /* Fija el título en la parte superior */
+  top: 0; /* Posiciona el título en la parte superior */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  color: #ffffff; /* Color del texto */
+  font-size: 36px; /* Tamaño de fuente */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  z-index: 3; /* Encima del fondo y overlay */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Sombra para el texto */
+  padding: 10px 20px; /* Espaciado alrededor del texto */
+  background-color: rgba(0, 128, 128, 0.8); /* Fondo del título para contraste */
+  border-radius: 8px; /* Bordes redondeados */
+  margin: 10px 0; /* Margen para evitar que el título toque los bordes */
+}
+
+/* Estilo para el contenedor principal */
+.app-container {
+  background-color: rgba(189, 188, 188, 0.9); /* Fondo blanco con transparencia para el contenido */
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  width: 90%;
+  max-width: 800px;
+  z-index: 3; /* Contenido por encima del overlay */
+  overflow-y: auto;
+}
+
+h1, h2 {
+  text-align: center; /* Centramos los títulos */
+  color: #333; /* Color del texto */
+}
+
+/* Ajuste de lista para que no use puntos de lista predeterminados */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
